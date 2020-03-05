@@ -6,6 +6,11 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
+  <context-param>
+    <param-name>PROPERTY_FILE</param-name>
+    <param-value>C:\Users\HemanthNikhilPullaia\IdeaProjects\DemoProject\src\main\Resources.properties</param-value>
+  </context-param>
+
   <filter>
     <filter-name>RollNumberFilter</filter-name>
     <filter-class>com.java.web.filter.RollNumberFilter</filter-class>
@@ -39,14 +44,27 @@
     <listener-class>com.java.web.servlet.Listener</listener-class>
   </listener>
 
+
+
   <servlet>
     <servlet-name>StudentServlet</servlet-name>
     <servlet-class>com.java.web.servlet.StudentServlet</servlet-class>
 
   </servlet>
+
+  <servlet>
+    <servlet-name>PropertyReaderServlet</servlet-name>
+    <servlet-class>com.java.web.servlet.PropertyReaderServlet</servlet-class>
+  </servlet>
+
+
   <servlet-mapping>
     <servlet-name>StudentServlet</servlet-name>
     <url-pattern>/studentInfo</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>PropertyReaderServlet</servlet-name>
+    <url-pattern>/propertyReader</url-pattern>
+  </servlet-mapping>
 </web-app>

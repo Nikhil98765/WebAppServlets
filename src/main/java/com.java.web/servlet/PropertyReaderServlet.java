@@ -15,11 +15,11 @@ public class PropertyReaderServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         // get the property value and print it out
         getServletContext().log(p.getProperty("name"));
-        getServletContext().log(p.getProperty("rollno"));
-        getServletContext().log(p.getProperty("university"));
-        out.println("Name - " + p.getProperty("name"));
-        out.println("RollNo - " + p.getProperty("rollno"));
-        out.println("Uni - " + p.getProperty("university"));
+        getServletContext().log(p.getProperty("rollNo"));
+        getServletContext().log(p.getProperty("University"));
+        out.println("Name : " + p.getProperty("name"));
+        out.println("RollNo : " + p.getProperty("rollNo"));
+        out.println("University : " + p.getProperty("University"));
 
     }
 }

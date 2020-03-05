@@ -8,7 +8,7 @@
 
   <context-param>
     <param-name>PROPERTY_FILE</param-name>
-    <param-value>"C:\\Users\\HemanthNikhilPullaia\\IdeaProjects\\DemoProject\\src\\main\\Resources.properties"</param-value>
+    <param-value>C:\Users\HemanthNikhilPullaia\IdeaProjects\DemoProject\src\main\Resources.properties</param-value>
   </context-param>
 
   <filter>
@@ -41,7 +41,7 @@
 
 
   <listener>
-    <listener-class>com.java.web.listener.Listener</listener-class>
+    <listener-class>com.java.web.servlet.Listener</listener-class>
   </listener>
 
 
@@ -51,9 +51,20 @@
     <servlet-class>com.java.web.servlet.StudentServlet</servlet-class>
 
   </servlet>
+
+  <servlet>
+    <servlet-name>PropertyReaderServlet</servlet-name>
+    <servlet-class>com.java.web.servlet.PropertyReaderServlet</servlet-class>
+  </servlet>
+
+
   <servlet-mapping>
     <servlet-name>StudentServlet</servlet-name>
     <url-pattern>/studentInfo</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>PropertyReaderServlet</servlet-name>
+    <url-pattern>/propertyReader</url-pattern>
+  </servlet-mapping>
 </web-app>

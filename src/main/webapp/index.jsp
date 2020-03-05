@@ -12,6 +12,10 @@
     <button type="submit">register</button>
 </form>
 
+<form action="propertyReader" method="get">
+    <button onSubmit = "propertyReader">Read Properties</button>
+</form>
+
 
 </body>
 
