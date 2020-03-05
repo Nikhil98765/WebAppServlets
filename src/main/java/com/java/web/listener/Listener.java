@@ -14,9 +14,9 @@ public class Listener implements ServletContextListener {
 
         ServletContext servletContext = servletContextEvent.getServletContext();
         String path = servletContext.getInitParameter("PROPERTY_FILE");
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+
         System.out.println("Web Application Has Been Started! Congrats!\n");
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+
         try (InputStream input = new FileInputStream(path)) {
             Properties prop = new Properties();
             if (input == null) {
@@ -24,12 +24,9 @@ public class Listener implements ServletContextListener {
                 return;
             }
 
-
-            //load a properties file from class path, inside static method
             prop.load(input);
 
             servletContext.setAttribute("properties", prop);
-
 
         }
         catch (IOException ex) {
@@ -39,8 +36,8 @@ public class Listener implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+
         System.out.println("Web Application Has Been destroyed! Congrats!\n");
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+
     }
 }
