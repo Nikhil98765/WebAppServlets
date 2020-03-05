@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0707b95f-9fb0-4cc1-a8bf-fbc196bcc9f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DemoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Servlets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.java.web/filter/ConverterFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.java.web/filter/NameFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.java.web/filter/RollNumberFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.java.web/servlet/Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.java.web/servlet/PropertyReaderServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.java.web/servlet/StudentServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

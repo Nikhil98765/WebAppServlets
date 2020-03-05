@@ -41,7 +41,7 @@
 
 
   <listener>
-    <listener-class>com.java.web.servlet.Listener</listener-class>
+    <listener-class>com.java.web.listener.Listener</listener-class>
   </listener>
 
 
