@@ -23,6 +23,9 @@ public class ConverterFilter implements Filter {
 
             HttpServletRequest req = (HttpServletRequest) servletRequest;
             HttpServletResponse res = (HttpServletResponse) servletResponse;
+            ObjectMapper ob = new ObjectMapper();
+            XmlMapper xmlOb = new XmlMapper();
+
 
             String content = req.getHeader("Accept");
             Object info = servletRequest.getAttribute("info");
@@ -30,13 +33,11 @@ public class ConverterFilter implements Filter {
 
             switch (content) {
                 case "application/json":
-                    ObjectMapper ob = new ObjectMapper();
                     Object json = ob.writeValueAsString(info);
                     res.setContentType(content);
                     out.print(json);
                     break;
                 case "application/xml":
-                    XmlMapper xmlOb = new XmlMapper();
                     Object xml = xmlOb.writeValueAsString(info);
                     res.setContentType(content);
                     out.print(xml);
